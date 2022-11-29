@@ -1,0 +1,92 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+    border: 4px solid black;
+    height: max-content;
+    padding-bottom: 10px;
+}
+
+.Box1 {
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+/* ! Map */
+.Map-Wrapper {
+    padding: 10px;
+    margin-top: 10px;
+    height: 450px;
+
+}
+
+#map {
+    height: 100%;
+    border: 3px solid black;
+
+}
+
+
+
+.map-details {
+    background-color: blanchedalmond;
+    display: grid;
+    border: 1px solid black;
+
+}
+
+.map-details h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.map-details p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.line {
+    border-bottom: 3px solid blacks;
+}
+
+.vis {
+    width: 100%;
+}
+
+.vis span {
+    padding: 20px;
+    width: 100%;
+}
+
+.Header {
+    background-color: black;
+
+    padding: 10px;
+}
+
+.Header h1 {
+    text-align: center;
+    color: blanchedalmond;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 568px) {
+    .Box1 {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5px;
+    }
+
+    .Map-Wrapper {
+
+        margin-top: 10px;
+        height: 600px;
+
+    }
+
+}

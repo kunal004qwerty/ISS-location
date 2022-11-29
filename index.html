@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch JSON FROM API and map lat lon</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- For leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <!-- DAY AND NIGHT MODE ON MAP -->
+    <script src="https://unpkg.com/leaflet"></script>
+    <script src="https://unpkg.com/@joergdietrich/leaflet.terminator"></script>
+    <!-- for map design -->
+    <script
+      src="https://unpkg.com/esri-leaflet@3.0.8/dist/esri-leaflet.js"
+      integrity="sha512-E0DKVahIg0p1UHR2Kf9NX7x7TUewJb30mxkxEm2qOYTVJObgsAGpEol9F6iK6oefCbkJiA4/i6fnTHzM6H1kEA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="Header"><h1>International space station live location</h1></div>
+    <div class="Box1">
+      <div class="Map-Wrapper">
+        <div id="map"></div>
+      </div>
+      <div class="map-details">
+        <h1>Where is the ISS?</h1>
+        <p>Time: <sapn id="time"></sapn></p>
+
+        <p>Latitude: <span id="lat"></span> &#xb0;</p>
+
+        <p>Longitude: <span id="long"></span> &#xb0;</p>
+
+        <p>Altitude: <span id="alt"></span> Km</p>
+
+        <p>Velocity: <span id="vel"></span> Km/hr</p>
+
+        <p class="vis"><span id="vis"></span></p>
+      </div>
+    </div>
+    <script src="./Index.js"></script>
+  </body>
+</html>
