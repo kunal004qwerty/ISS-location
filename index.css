@@ -56,11 +56,38 @@ body {
 
 .vis {
     width: 100%;
+    text-align: center;
+
+
 }
 
 .vis span {
     padding: 20px;
     width: 100%;
+    border: 1px solid black;
+
+
+}
+
+
+.fa-sun {
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+.fa-moon {
+    color: white;
+    background-color: #0a67c9;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid black;
+
+
 }
 
 .Header {
