@@ -22,10 +22,12 @@ async function getISS() {
     document.getElementById("vis").innerText = "The ISS is in earth shadow";
     document.getElementById("vis").style.color = "white";
     document.getElementById("vis").style.background = "#0a67c9";
+    document.getElementById("sun").style.visibility = "hidden";
   } else {
     document.getElementById("vis").innerText = "The ISS is in sunlight";
     document.getElementById("vis").style.color = "black";
     document.getElementById("vis").style.background = "yellow";
+    document.getElementById("moon").style.visibility = "hidden";
   }
 
   document.getElementById("lat").innerText = latitude;

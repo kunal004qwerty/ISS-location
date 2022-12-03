@@ -28,6 +28,14 @@
       integrity="sha512-E0DKVahIg0p1UHR2Kf9NX7x7TUewJb30mxkxEm2qOYTVJObgsAGpEol9F6iK6oefCbkJiA4/i6fnTHzM6H1kEA=="
       crossorigin=""
     ></script>
+    <!-- ---FontAwesom Icon DND -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="Header"><h1>International space station live location</h1></div>
@@ -47,7 +55,10 @@
 
         <p>Velocity: <span id="vel"></span> Km/hr</p>
 
-        <p class="vis"><span id="vis"></span></p>
+        <p class="vis">
+          <span id="vis"></span> <i class="fa-solid fa-sun" id="sun"></i>
+          <i class="fa-solid fa-moon" id="moon"></i>
+        </p>
       </div>
     </div>
     <script src="./Index.js"></script>
